@@ -7,7 +7,8 @@ public class ListNode {
 
     @Override
     public String toString() {
-        StringBuilder str = new StringBuilder(val);
+        StringBuilder str = new StringBuilder();
+        str.append(val);
         ListNode cur = next;
         while (cur != null) {
             str.append(cur.val);
